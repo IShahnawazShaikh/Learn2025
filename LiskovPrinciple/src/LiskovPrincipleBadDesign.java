@@ -10,12 +10,12 @@ public class LiskovPrincipleBadDesign {
 
     static class Car extends Vehicle {
         @Override
-        public int numberOfEngine() {
+        public int numberOfWheel() {
             return 4;
         }
     }
 
-    static class Bycycle extends Vehicle {
+    static class Bicycle extends Vehicle {
         @Override
         public Boolean hasEngine() {
             return null;  //This code breaks the behavior of the program and narrows down its capability.
@@ -26,7 +26,7 @@ public class LiskovPrincipleBadDesign {
        List<Vehicle> vehicleList = Arrays.asList(
                new Car(),
                new MotorCycle(),
-               new Bycycle()
+               new Bicycle()
        );
 
        for(Vehicle vehicle: vehicleList) {

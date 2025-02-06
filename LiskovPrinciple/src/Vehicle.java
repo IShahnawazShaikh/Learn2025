@@ -1,5 +1,5 @@
 public class Vehicle {
-    public int numberOfEngine() {
+    public int numberOfWheel() {
         return 2;
     }
 
